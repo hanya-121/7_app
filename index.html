@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css"/>
+    <title>videoControl</title>
+</head>
+
+<body>
+    <div class="container-fluid"> <!--화면에 꽉 차게-->
+        <div class="row">
+            <div class="col-sm-12">
+                <video autoplay muted loop id="myVideo">
+                    <source src="./asset/notHero.mp4" type="video/mp4">
+                    your browser does not support HTML5 video <!--실행이 안 될때-->
+                </video>
+                <div class="content">
+                    <h1>히어로는 아닙니다만</h1>
+                    <p>남다른 능력을 지녔지만 아무도 구하지 못했던 남자가 마침내 운명의 그녀를 구해내는 판타지 로맨스 드라마</p>
+                    <!-- Lorem(n) 더미 텍스트 -->
+                    <button id="myBtn" onclick="myFunction()">Pause</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/js.js"></script> <!-- 보통 링킹해서 쓴다고 통칭함 -->
+</body>
+
+</html>
+
+<!--
+비디오 태그 사용 이유
+- 유튜브 링크 끌어오면 (iframe) 유튜브인 게 티가 남
+- 스트리밍 서버는 사용료가 비쌈
+??? 재정리
+-->
